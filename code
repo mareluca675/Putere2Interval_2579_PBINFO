@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+long long n, a, b, k = 1, i = 0;
+
+int main()
+{
+    cin >> n >> a >> b;
+    
+    while(k < a)
+    {
+        k = (k << 1);
+    }
+    
+    while(k < b and i < n)
+    {
+        cout << k << " ";
+        k = k << 1;
+        i ++;
+    }
+
+    return 0;
+}
